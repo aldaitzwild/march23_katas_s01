@@ -5,8 +5,8 @@
  * 
  * 
  * - Ecrire une fonction SelectForSquare() qui prend deux chiffres en entrée, 
- *  appelle la fonction square() sur le plus grand des deux et retourne le resultat
+ *  appeller la fonction square() sur le plus grand des deux et retourner le resultat
  * 
  * - Ecrire une fonction qui génére deux chiffres aléatoirement et 
- *  appelle SelectForSquare() avec, puis affiche le resultat.
+ *  appelle SelectForSquare() avec, puis afficher le resultat.
  */
