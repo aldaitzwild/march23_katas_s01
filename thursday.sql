@@ -21,6 +21,20 @@
 *
 */
 
+CREATE DATABASE katabdd;
+
+USE katabdd;
+
+CREATE TABLE contact (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    lastname VARCHAR(255) NOT NULL,
+    firstname VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    phone VARCHAR(255) NULL,
+    email VARCHAR(255) NULL,
+    country VARCHAR(255) NOT NULL
+);
+
 INSERT INTO `contact` (`firstname`,`lastname`,`age`,`phone`,`email`,`country`)
 VALUES
   ("Ray","Bridges",57,"08 83 30 24 71","morbi.non.sapien@aol.edu","Ukraine"),
@@ -123,3 +137,21 @@ VALUES
   ("Sheila","Brown",28,"06 95 24 18 82","aliquam.fringilla@google.ca","South Africa"),
   ("Chadwick","Sellers",63,"07 04 88 98 83","vivamus.molestie.dapibus@outlook.net","Philippines"),
   ("Dahlia","Davis",24,"01 61 25 82 69","cubilia.curae.donec@protonmail.com","United Kingdom");
+
+
+SELECT * FROM contact;
+
+
+SELECT lastname, firstname, age
+FROM contact
+WHERE country = 'France'; 
+
+
+SELECT * 
+FROM contact
+WHERE lastname LIKE 'W%';
+
+
+SELECT * 
+FROM contact
+WHERE age BETWEEN 40 AND 55;
